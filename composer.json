@@ -1,0 +1,26 @@
+{
+    "name": "kirillantv/yii2-dynamicvalue",
+    "type": "yii2-extension",
+    "description": "DynamicValue widget allows you to generate HTML content dynamicly depending on your data value",
+    "keywords": ["yii2", "kirillantv", "dynamicvalue", "widget", "value", "HTML", "generator", "render"],
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/kirillantv/yii2-dynamicvalue"
+    },
+    "authors": [
+        {
+            "name": "Kirill Antonov",
+            "email": "interpark46@gmail.com"
+        }
+    ],
+	"minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "kirillantv\\dynamicvalue\\": ""
+        }
+    }
+}
