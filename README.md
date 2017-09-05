@@ -23,7 +23,7 @@ You can use this widget adding following code to your view file and config `item
 ```php
 <?= DynamicValue::widget([
   'data' => $model,
-  'column' => $model->status,
+  'column' => 'status',
   'items' => [
       [
           'value' => 1,
@@ -40,7 +40,8 @@ You can use this widget adding following code to your view file and config `item
   ]);
 ```
 Widget has following parametres:
-`data` is model with your data. It would be nice if this will be active record model.
+
+`data` is model with your data. It would be nice if it will be active record model.
 
 `column` is property of your model or column of DB.
 
