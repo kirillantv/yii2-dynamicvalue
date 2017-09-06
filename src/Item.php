@@ -23,14 +23,14 @@ class Item extends Object
 	public $link;
 	
 	/**
-	 * @var string label for tag
-	 */
-	public $label;
-	
-	/**
 	 * @var array the tag options in terms of name-value pairs
 	 */
 	public $options;
+	
+	/**
+	 * @var boolean set true if you want to encode label
+	 */
+	public $encode = false;
 	
 	/**
 	 * Initialize Item object
@@ -90,6 +90,31 @@ class Item extends Object
 	public function setTag($value)
 	{
 		$this->tag = $value;
+	}
+	
+	/**
+	 * Returns label
+	 * 
+	 * @property string label for tag
+	 * @return string label
+	 */
+	public function getLabel()
+	{
+		return $this->label;
+	}
+	/**
+	 * Sets label
+	 */	
+	public function setLabel($value)
+	{
+		if ($this->encode == true)
+		{
+			$this->label = Html::encode($value);
+		}
+		else
+		{
+			$this->label = $value;
+		}
 	}
 	
 	/**

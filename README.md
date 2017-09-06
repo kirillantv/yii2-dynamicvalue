@@ -68,6 +68,8 @@ array indexes as value. Therefore you can set `items` array without `value` as f
 
 `link` is optional parameter. If you will set it, widget will render a hypertext link.
 
+`encode` - boolean property. If you want to encode label you have to set it true. By default label is not encoded.
+
 `tag` is HTML tag wrapping your label. Ignored if you set `link`. By the default, it renders `<div>`
 
 `options`is array the tag options in terms of name-value pairs.
